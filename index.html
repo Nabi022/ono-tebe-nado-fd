@@ -31,7 +31,7 @@
           alt="Логотип проекта"
         />
       </a>
-      <div class="header__contacts">
+      <div class="contacts-container">
         <address class="contacts">
           <a href="tel:+99995555555" class="contacts__link">+9 999 555 5555</a>
           <a href="mailto:info@sobaka.ge" class="contacts__link"
@@ -76,6 +76,7 @@
           <li class="lots__item">
             <a href="#" class="lots__link">
               <article class="lot lot_type_film">
+                <div class="overlay"></div>
                 <h3 class="lot__title">
                   Фильм режиссёра, который бросил киношколу
                 </h3>
@@ -90,6 +91,7 @@
           <li class="lots__item">
             <a href="#" class="lots__link">
               <article class="lot lot_type_book">
+                <div class="overlay"></div>
                 <h3 class="lot__title">
                   Книга, где описан один скучный день из жизни рекламного агента
                 </h3>
@@ -107,6 +109,7 @@
           <li class="lots__item">
             <a href="#" class="lots__link">
               <article class="lot lot_type_picture">
+                <div class="overlay"></div>
                 <h3 class="lot__title">
                   Картина, которую повторит даже 5-летний сын маминой подруги
                 </h3>
@@ -155,15 +158,17 @@
       </section>
     </main>
     <footer class="footer">
-      <address class="footer__contacts">
+      <div class="contacts-container">
+      <address class="contacts">
         <a href="tel:+99995555555" class="contacts__link">+9 999 555 5555</a>
         <a href="mailto:info@sobaka.ge" class="contacts__link"
           >info@sobaka.ge</a
-        >
-        <span class="footer__contacts__text">
+        ><br>
+        <span class="contacts__text">
           наб. Принсенграхт 263-265, Амстердам
         </span>
       </address>
+      </div>
 
       <nav class="footer__menu">
         <ul class="footer__menu-list">
@@ -179,7 +184,6 @@
         </ul>
       </nav>
 
-      <div class="footer__social">
         <ul class="footer__social-list">
           <li class="footer__social-list-item">
             <a href="#" class="footer__social-link">
@@ -209,7 +213,6 @@
             </a>
           </li>
         </ul>
-      </div>
     </footer>
   </body>
 </html>

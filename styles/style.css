@@ -73,12 +73,14 @@ body {
   list-style: none;
 }
 
-.header__contacts {
+.header .contacts-container {
+  justify-self: end;
+}
+
+.contacts-container {
   display: flex;
   flex-direction: column;
-  justify-self: end;
   width: 240px;
-  height: 98px;
   font-style: normal;
 }
 
@@ -172,8 +174,8 @@ body {
 }
 
 .bet-button {
-  border: 1px solid #fff;
-  padding: 12px 32px 11px 31px;
+  border: 1px solid currentColor;
+  padding: 9px 32px 7px 30px;
   color: #fff;
   font-size: 22px;
   text-transform: uppercase;
@@ -241,14 +243,6 @@ body {
 
 .lot_type_picture {
   background-image: url(../images/card-lot-03.jpg);
-}
-
-.lot::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  z-index: 0;
-  background-color: rgba(0, 0, 0, 0.6);
 }
 
 .lot__title {
@@ -332,18 +326,8 @@ body {
   padding: 0 50px 82px;
 }
 
-.footer__contacts {
-  display: flex;
-  flex-direction: column;
+.footer .contacts-container {
   justify-self: start;
-  max-width: 240px;
-  font-style: normal;
-}
-
-.footer__contacts__text {
-  font-size: 18px;
-  font-style: normal;
-  line-height: 1.5;
 }
 
 .footer__menu {
@@ -378,12 +362,9 @@ body {
   text-decoration: none;
 }
 
-.footer__social {
-  justify-self: end;
-}
-
 .footer__social-list {
   display: flex;
+  justify-self: end;
   gap: 48px;
   list-style: none;
 }
